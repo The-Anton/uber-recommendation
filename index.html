@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arike</title>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCATtupoIdp7bend_fjJmKy52HLRxSz_oA"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/denissellu/routeboxer@master/src/RouteBoxer.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td valign="top">
+          <div id="map" style="width: 600px; height: 500px"></div>
+        </td>
+        <td>
+          <div
+            id="side_bar"
+            style="width: 200px; height: 600px; overflow: auto"
+          ></div>
+        </td>
+      </tr>
+    </table>
+    Recommend places within
+    <input type="text" id="distance" value="3" size="2" />miles of the route
+    from <input type="text" id="from" value="Army Institute of Technology" />to
+    <input type="text" id="to" value="Pune Railway Satation" />
+    <input type="submit" onclick="route()" />
+    <br />
+
+    <label>type</label>
+    <input type="text" id="type" value="Tourist_Place" />
+
+
+    <div id="suggestions-section">
+      <h1>Places you can book your next ride</h1>
+
+    </div>
+
+    <div id="suggestions-section">
+      <h1>Places you can book your next ride</h1>
+
+    </div>
+
+    <div id="area">
+    </div>
+   
+    <div id="area">
+    </div>
+    <script src="app.js"></script>
+
+  </body>
+</html>
